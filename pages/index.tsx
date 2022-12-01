@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className="text-3xl font-bold underline">
+        <h1 className="text-3xl font-bold underline text-mediumGray">
           Remotify! Make Remote Work!
         </h1>
       </main>
