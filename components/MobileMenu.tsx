@@ -15,22 +15,22 @@ export default function MobileMenu({ onCloseMenu }: MobileMenuProps) {
           src={closeIcon}
           alt=""
           onClick={() => onCloseMenu()}
-          className="cursor-pointer relative left-[185px]"
+          className="cursor-pointer relative left-[190px]"
         />
-        <div className="pt-6 text-xs">
+        <div className="mt-9 text-xs">
           <ul>
-            <li className="pb-4">
+            <li className="pb-4 cursor-pointer">
               Features{" "}
-              <Image src={arrowDown} alt="" className="inline-block ml-2" />
+              <Image src={arrowDown} alt="" className="inline-block ml-2 " />
             </li>
-            <li className="pb-4">
+            <li className="pb-4 cursor-pointer">
               Company{" "}
-              <Image src={arrowDown} alt="" className="inline-block ml-2" />
+              <Image src={arrowDown} alt="" className="inline-block ml-2 " />
             </li>
-            <li className="pb-4">Careers</li>
-            <li className="pb-4">About</li>
+            <li className="pb-4 cursor-pointer">Careers</li>
+            <li className="pb-4 cursor-pointer">About</li>
           </ul>
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center mt-2">
             <button className="block my-2">Login</button>
             <button className="block my-2 py-2 px-4 border-2 border-mediumGray rounded-xl w-full">
               Register

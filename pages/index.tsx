@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import { useState } from "react";
 import MobileMenu from "../components/MobileMenu";
+import Hero from "../components/Hero";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,6 +26,7 @@ export default function Home() {
       <main className="">
         {menuOpen && <MobileMenu onCloseMenu={closeMenu} />}
         <Navbar onOpenMenu={openMenu} />
+        <Hero />
       </main>
     </div>
   );
