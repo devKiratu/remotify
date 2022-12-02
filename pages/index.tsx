@@ -1,7 +1,19 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
+import { useState } from "react";
+import MobileMenu from "../components/MobileMenu";
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const openMenu = () => {
+    setMenuOpen(true);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div>
       <Head>
@@ -11,7 +23,8 @@ export default function Home() {
       </Head>
 
       <main className="">
-        <Navbar />
+        {menuOpen && <MobileMenu onCloseMenu={closeMenu} />}
+        <Navbar onOpenMenu={openMenu} />
       </main>
     </div>
   );
