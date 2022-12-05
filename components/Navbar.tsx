@@ -2,9 +2,8 @@ import Image from "next/image";
 import logo from "../public/img/logo.svg";
 import menuIcon from "../public/img/icon-menu.svg";
 import Link from "next/link";
-import arrowDown from "../public/img/icon-arrow-down.svg";
-import arrowUp from "../public/img/icon-arrow-up.svg";
 import Dropdown from "./Dropdown";
+import { company, features } from "../utils/data";
 
 interface NavbarProps {
   onOpenMenu: () => void;
@@ -20,16 +19,11 @@ export default function Navbar({ onOpenMenu }: NavbarProps) {
       </div>
       <div className="text-xs hidden md:block flex-grow">
         <ul className="flex justify-start ml-16 items-center">
-          <li className="text-mediumGray cursor-pointer mr-10 hover:text-lighterBlack focus:text-lighterBlack active:text-lighterBlack">
-            Features{" "}
-            <Image
-              src={arrowDown}
-              alt=""
-              className="inline-block ml-2 text-mediumGray"
-            />
+          <li className="cursor-pointer mr-10">
+            <Dropdown data={features} />
           </li>
           <li className="cursor-pointer mr-10 ">
-            <Dropdown />
+            <Dropdown data={company} />
           </li>
           <li className="cursor-pointer mr-10 hover:text-lighterBlack focus:text-lighterBlack active:text-lighterBlack">
             Careers
