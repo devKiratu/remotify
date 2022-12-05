@@ -14,15 +14,15 @@ export default function Dropdown({ data }: DropDownProps) {
       <Menu.Button>
         {({ open }) =>
           open ? (
-            <>
+            <span className="text-lighterBlack">
               {data.title}
               <Image src={arrowUp} alt="" className="inline-block ml-2 " />
-            </>
+            </span>
           ) : (
-            <>
+            <span className="focus:text-lighterBlack hover:text-lighterBlack active:text-lighterBlack ">
               {data.title}
               <Image src={arrowDown} alt="" className="inline-block ml-2 " />
-            </>
+            </span>
           )
         }
       </Menu.Button>
