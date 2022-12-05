@@ -1,7 +1,7 @@
 import Image from "next/image";
 import closeIcon from "../public/img/icon-close-menu.svg";
-import arrowDown from "../public/img/icon-arrow-down.svg";
-import arrowUp from "../public/img/icon-arrow-up.svg";
+import Dropdown from "./Dropdown";
+import { company, features } from "../utils/data";
 
 interface MobileMenuProps {
   onCloseMenu: () => void;
@@ -19,16 +19,18 @@ export default function MobileMenu({ onCloseMenu }: MobileMenuProps) {
         />
         <div className="mt-9 text-xs">
           <ul>
-            <li className="pb-4 cursor-pointer">
-              Features{" "}
-              <Image src={arrowDown} alt="" className="inline-block ml-2 " />
+            <li className="pb-4">
+              <Dropdown data={features} />
             </li>
-            <li className="pb-4 cursor-pointer">
-              Company{" "}
-              <Image src={arrowDown} alt="" className="inline-block ml-2 " />
+            <li className="pb-4">
+              <Dropdown data={company} />
             </li>
-            <li className="pb-4 cursor-pointer">Careers</li>
-            <li className="pb-4 cursor-pointer">About</li>
+            <li className="pb-4 focus:text-lighterBlack hover:text-lighterBlack">
+              <a href="#">Careers</a>
+            </li>
+            <li className="pb-4 focus:text-lighterBlack hover:text-lighterBlack">
+              <a href="#">About</a>
+            </li>
           </ul>
           <div className="flex flex-col justify-center items-center mt-2">
             <button className="block my-2">Login</button>

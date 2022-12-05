@@ -10,7 +10,7 @@ interface DropDownProps {
 
 export default function Dropdown({ data }: DropDownProps) {
   return (
-    <Menu as={"div"} className="inline-block relative z-50">
+    <Menu as={"div"} className="md:inline-block md:relative">
       <Menu.Button>
         {({ open }) =>
           open ? (
@@ -28,9 +28,9 @@ export default function Dropdown({ data }: DropDownProps) {
       </Menu.Button>
       <Menu.Items
         as="div"
-        className={`bg-whitish rounded-[10px] p-3 overflow-hidden w-max h-fit absolute top-5 ${
+        className={`md:bg-whitish rounded-[10px] md:p-3 p-2 pb-0 overflow-hidden w-max h-fit md:absolute md:top-5 ${
           data.items[0].icon ? "right-0" : ""
-        } z-50 shadow-[0_0_50px_-12px_rgb(0,0,0,0.25)]`}
+        } md:z-50 md:shadow-[0_0_50px_-12px_rgb(0,0,0,0.25)]`}
       >
         {data.items.map((item) => (
           <Menu.Item key={item.title}>
