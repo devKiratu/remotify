@@ -26,10 +26,10 @@ export default function Navbar({ onOpenMenu }: NavbarProps) {
             <Dropdown data={company} />
           </li>
           <li className="cursor-pointer mr-10 hover:text-lighterBlack focus:text-lighterBlack active:text-lighterBlack">
-            Careers
+            <a href="#">Careers</a>
           </li>
           <li className="cursor-pointer mr-10 hover:text-lighterBlack focus:text-lighterBlack active:text-lighterBlack">
-            About
+            <a href="#">About</a>
           </li>
         </ul>
       </div>
