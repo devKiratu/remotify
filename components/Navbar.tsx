@@ -4,6 +4,7 @@ import menuIcon from "../public/img/icon-menu.svg";
 import Link from "next/link";
 import arrowDown from "../public/img/icon-arrow-down.svg";
 import arrowUp from "../public/img/icon-arrow-up.svg";
+import Dropdown from "./Dropdown";
 
 interface NavbarProps {
   onOpenMenu: () => void;
@@ -27,9 +28,8 @@ export default function Navbar({ onOpenMenu }: NavbarProps) {
               className="inline-block ml-2 text-mediumGray"
             />
           </li>
-          <li className="cursor-pointer mr-10 hover:text-lighterBlack focus:text-lighterBlack active:text-lighterBlack">
-            Company{" "}
-            <Image src={arrowDown} alt="" className="inline-block ml-2 " />
+          <li className="cursor-pointer mr-10 ">
+            <Dropdown />
           </li>
           <li className="cursor-pointer mr-10 hover:text-lighterBlack focus:text-lighterBlack active:text-lighterBlack">
             Careers
