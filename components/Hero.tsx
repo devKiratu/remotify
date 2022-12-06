@@ -22,10 +22,8 @@ export default function Hero() {
           Make <span className="md:block">remote work</span>
         </h1>
         <p className="text-sm lg:text-sm my-3 md:text-xs md:my-4 xl:my-10 xl:w-4/5">
-          Get your team in sync, no matter your location.
-          <br />
-          Streamline processes, create team rituals, and watch productivity
-          soar.
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
         </p>
         <button className="px-5 py-3 bg-lighterBlack text-whitish rounded-xl text-xs my-2">
           Learn more
