@@ -25,16 +25,28 @@ export default function MobileMenu({ onCloseMenu }: MobileMenuProps) {
             <li className="pb-4">
               <Dropdown data={company} />
             </li>
-            <li className="pb-4 focus:text-lighterBlack hover:text-lighterBlack">
-              <a href="#">Careers</a>
+            <li className="pb-4 ">
+              <a
+                href="#"
+                className="focus:text-lighterBlack hover:text-lighterBlack"
+              >
+                Careers
+              </a>
             </li>
-            <li className="pb-4 focus:text-lighterBlack hover:text-lighterBlack">
-              <a href="#">About</a>
+            <li className="pb-4 ">
+              <a
+                href="#"
+                className="focus:text-lighterBlack hover:text-lighterBlack"
+              >
+                About
+              </a>
             </li>
           </ul>
           <div className="flex flex-col justify-center items-center mt-2">
-            <button className="block my-2">Login</button>
-            <button className="block my-2 py-2 px-4 border-2 border-mediumGray rounded-xl w-full">
+            <button className="block my-2 hover:text-lighterBlack focus:text-lighterBlack">
+              Login
+            </button>
+            <button className="block my-2 py-2 px-4 border-2 border-mediumGray rounded-xl w-full hover:border-lighterBlack hover:text-lighterBlack focus:text-lighterBlack">
               Register
             </button>
           </div>

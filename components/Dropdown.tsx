@@ -1,8 +1,8 @@
 import { Menu } from "@headlessui/react";
 import Image from "next/image";
-import arrowDown from "../public/img/icon-arrow-down.svg";
-import arrowUp from "../public/img/icon-arrow-up.svg";
 import { DropDownMenuItems } from "../utils/data";
+import ArrowDown from "./icons/ArrowDown";
+import ArrowUp from "./icons/ArrowUp";
 
 interface DropDownProps {
   data: DropDownMenuItems;
@@ -11,17 +11,17 @@ interface DropDownProps {
 export default function Dropdown({ data }: DropDownProps) {
   return (
     <Menu as={"div"} className="md:inline-block md:relative">
-      <Menu.Button>
+      <Menu.Button className="hover:text-lighterBlack focus:text-lighterBlack">
         {({ open }) =>
           open ? (
             <span className="text-lighterBlack">
               {data.title}
-              <Image src={arrowUp} alt="" className="inline-block ml-2 " />
+              <ArrowUp />
             </span>
           ) : (
-            <span className="focus:text-lighterBlack hover:text-lighterBlack active:text-lighterBlack ">
+            <span className="focus:text-lighterBlack hover:text-lighterBlack">
               {data.title}
-              <Image src={arrowDown} alt="" className="inline-block ml-2 " />
+              <ArrowDown />
             </span>
           )
         }

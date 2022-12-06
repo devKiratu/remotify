@@ -25,17 +25,29 @@ export default function Navbar({ onOpenMenu }: NavbarProps) {
           <li className="cursor-pointer mr-10 ">
             <Dropdown data={company} />
           </li>
-          <li className="cursor-pointer mr-10 hover:text-lighterBlack focus:text-lighterBlack active:text-lighterBlack">
-            <a href="#">Careers</a>
+          <li className="cursor-pointer mr-10">
+            <a
+              href="#"
+              className="hover:text-lighterBlack focus:text-lighterBlack"
+            >
+              Careers
+            </a>
           </li>
-          <li className="cursor-pointer mr-10 hover:text-lighterBlack focus:text-lighterBlack active:text-lighterBlack">
-            <a href="#">About</a>
+          <li className="cursor-pointer mr-10">
+            <a
+              href="#"
+              className="hover:text-lighterBlack focus:text-lighterBlack"
+            >
+              About
+            </a>
           </li>
         </ul>
       </div>
       <div className=" text-xs lg:flex justify-between items-center hidden">
-        <button className="block">Login</button>
-        <button className="block py-2 px-4 border-2 border-mediumGray rounded-xl w-full ml-10">
+        <button className="block hover:text-lighterBlack focus:text-lighterBlack">
+          Login
+        </button>
+        <button className="block py-2 px-4 border-2 border-mediumGray rounded-xl w-full ml-10 hover:border-lighterBlack hover:text-lighterBlack focus:text-lighterBlack">
           Register
         </button>
       </div>

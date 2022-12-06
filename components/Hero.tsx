@@ -25,7 +25,7 @@ export default function Hero() {
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
-        <button className="px-5 py-3 bg-lighterBlack text-whitish rounded-xl text-xs my-2">
+        <button className="px-5 py-3 bg-lighterBlack text-whitish font-bold rounded-xl text-xs my-2 hover:bg-whitish border border-lighterBlack hover:text-lighterBlack">
           Learn more
         </button>
         <div className="flex justify-between items-center my-7  w-full xl:w-4/5 xl:mt-16 md:mb-0">
