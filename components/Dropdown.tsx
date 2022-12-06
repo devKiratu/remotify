@@ -28,9 +28,9 @@ export default function Dropdown({ data }: DropDownProps) {
       </Menu.Button>
       <Menu.Items
         as="div"
-        className={`md:bg-whitish rounded-[10px] md:p-3 p-2 pb-0 overflow-hidden w-max h-fit md:absolute md:top-5 ${
+        className={`lg:bg-whitish rounded-[10px] lg:p-3 p-2 pb-0 overflow-hidden w-max h-fit lg:absolute lg:top-5 ${
           data.items[0].icon ? "right-0" : ""
-        } md:z-50 md:shadow-[0_0_50px_-12px_rgb(0,0,0,0.25)]`}
+        } lg:z-50 lg:shadow-[0_0_50px_-12px_rgb(0,0,0,0.25)]`}
       >
         {data.items.map((item) => (
           <Menu.Item key={item.title}>

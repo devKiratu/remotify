@@ -17,7 +17,7 @@ export default function Navbar({ onOpenMenu }: NavbarProps) {
           <Image src={logo} alt="" />
         </Link>
       </div>
-      <div className="text-xs hidden md:block flex-grow">
+      <div className="text-xs hidden lg:block flex-grow">
         <ul className="flex justify-start ml-16 items-center">
           <li className="cursor-pointer mr-10">
             <Dropdown data={features} />
@@ -33,13 +33,13 @@ export default function Navbar({ onOpenMenu }: NavbarProps) {
           </li>
         </ul>
       </div>
-      <div className=" text-xs md:flex justify-between items-center hidden">
+      <div className=" text-xs lg:flex justify-between items-center hidden">
         <button className="block">Login</button>
         <button className="block py-2 px-4 border-2 border-mediumGray rounded-xl w-full ml-10">
           Register
         </button>
       </div>
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <Image
           src={menuIcon}
           alt=""
